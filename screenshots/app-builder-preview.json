@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "星屑突击",
+      "hasCanvas": true,
+      "bodyTextLen": 201,
+      "bodyTextHash": "a87a27c4984e77e885e291a8f02a4330255bebedd9b8344bf4a847ce3b7b065a",
+      "bodyTextPrefix": "深空联队 · 第七舰队 星屑突击 STARSHARD 俯视驾驶拦截机，击破一波波来袭的敌舰。截获多重射击、护盾和加速，把代号留在",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "星屑突击",
+      "hasCanvas": true,
+      "bodyTextLen": 201,
+      "bodyTextHash": "a87a27c4984e77e885e291a8f02a4330255bebedd9b8344bf4a847ce3b7b065a",
+      "bodyTextPrefix": "深空联队 · 第七舰队 星屑突击 STARSHARD 俯视驾驶拦截机，击破一波波来袭的敌舰。截获多重射击、护盾和加速，把代号留在",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

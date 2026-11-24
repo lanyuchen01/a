@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/700.css";
+@import "@fontsource/orbitron/500.css";
+@import "@fontsource/orbitron/700.css";
+
+@theme {
+  --font-sans: "Outfit", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "WenQuanYi Zen Hei",
+    sans-serif;
+  --font-display: "Orbitron", "PingFang SC", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif;
+  --color-void: #070910;
+  --color-ink: #0c121b;
+  --color-panel: #121a26;
+  --color-line: #243246;
+  --color-ice: #e7f6ff;
+  --color-mist: #8ea4bb;
+  --color-flare: #3ee7ff;
+  --color-ember: #ff5c45;
+  --color-prize: #ffc857;
+  --radius-panel: 1rem;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-void);
+    color: var(--color-ice);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-flare);
+    outline-offset: 2px;
+  }
+}
+
+.game-root {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  overscroll-behavior: none;
+}
+
+.game-root input {
+  user-select: text;
+  touch-action: auto;
+}
+
+.track-brand {
+  letter-spacing: 0.34em;
+}
+
+.safe-b {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+
+.glow-flare {
+  box-shadow: 0 0 28px color-mix(in srgb, var(--color-flare) 32%, transparent);
+}
+
+.hud-corner {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-color: color-mix(in srgb, var(--color-flare) 70%, transparent);
+  pointer-events: none;
+}
+
+@media (pointer: fine) and (min-width: 840px) {
+  .touch-only {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-root *,
+  .game-root *::before,
+  .game-root *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
